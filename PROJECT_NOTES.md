@@ -23,3 +23,14 @@ nest g class coffees/dto/create-coffee.dto --no-spec
 ## Создание DTO для обновления(PATCH) сущности coffees
 
 nest g class coffees/dto/update-coffee.dto --no-spec
+
+## Подключение зависимостей для валидации данных
+
+npm i class-validator class-transformer
+
+Для активации этой библиотеки прописываем в main.ts
+app.useGlobalPipes(new ValidationPipe());
+
+## Устанавливаем доп. пакет NestJS для создания новых DTO на основе существующих без копирования кода
+
+npm i @nestjs/mapped-types
