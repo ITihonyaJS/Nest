@@ -15,7 +15,7 @@ import { CoffeesModule } from './coffees/coffees.module';
       username: 'postgres', // username
       password: 'pass123', // user password
       database: 'postgres', // name of our database,
-      autoLoadEntities: true, // models will be loaded automatically 
+      autoLoadEntities: true, // models will be loaded automatically
       synchronize: true, // your entities will be synced with the database(recommended: disable in prod)
     }),
   ],

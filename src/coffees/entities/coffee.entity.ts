@@ -1,4 +1,4 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm'
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Coffee {
@@ -8,6 +8,6 @@ export class Coffee {
   name: string;
   @Column()
   brand: string;
-  @Column('json',{nullable: true})
+  @Column('json', { nullable: true })
   flavors: string[];
 }

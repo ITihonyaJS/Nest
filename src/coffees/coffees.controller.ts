@@ -3,8 +3,6 @@ import {
   Controller,
   Delete,
   Get,
-  HttpCode,
-  HttpStatus,
   Param,
   ParseIntPipe,
   Patch,
@@ -22,6 +20,8 @@ export class CoffeesController {
   @Get()
   findAll(@Query() paginationQuery) {
     // const { limit, offset } = paginationQuery;
+    console.log('paginationQuery', paginationQuery);
+
     return this.coffeesService.findAll();
   }
 
