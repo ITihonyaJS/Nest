@@ -1,8 +1,8 @@
-version: "3.9"
+version: '3.9'
 
 services:
   db:
-    image: postgres:latest
+    image: postgres:15
     container_name: nest-db
     restart: always
     environment:
@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_DB: postgres
     ports:
-      - "5432:5432"
+      - '5432:5432'
     volumes:
       - db_data:/var/lib/postgresql/data
 
@@ -22,7 +22,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: admin@example.com
       PGADMIN_DEFAULT_PASSWORD: admin
     ports:
-      - "8080:80"
+      - '8080:80'
     depends_on:
       - db
 

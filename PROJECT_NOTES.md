@@ -24,6 +24,10 @@ nest g class coffees/dto/create-coffee.dto --no-spec
 
 nest g class coffees/dto/update-coffee.dto --no-spec
 
+## Создание сущности(coffee,flavor и т.п.) и указываем путь.На данный момент мы создаём сущность по пути coffes/(--no-spec...без заполнения)
+
+nest g class coffees/entities/flavor.entity --no-spec
+
 ## Подключение зависимостей для валидации данных
 
 npm i class-validator class-transformer
